@@ -10,7 +10,7 @@
     <meta name="ws_url" content="{{ env('WS_URL') }}">
     <meta name="user_id" content="{{ Auth::id() }}">
 
-    <title>Realtime Simple Chat</title>
+    <title>Simple APP</title>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -34,7 +34,7 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        Realtime Simple Chat
+                        Simple APP
                     </a>
                 </div>
 
@@ -79,13 +79,13 @@
     </div>
 
     <!-- Scripts -->
-    {{-- <script src="{{ asset('js/app.js') }}"></script> --}}
+    <!-- {{-- <script src="{{ asset('js/app.js') }}"></script> --}} -->
     <script src="{{ asset('js/jquery-2.2.3.min.js') }}"></script>
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('js/vue.js') }}"></script>
-    <script src="{{ asset('js/socket.io.js') }}"></script>
+    <!-- <script src="{{ asset('js/vue.js') }}"></script> -->
+    <!-- <script src="{{ asset('js/socket.io.js') }}"></script> -->
     <script src="{{ asset('js/moment.min.js') }}"></script>
-    {{-- <script src="{{ asset('js/socket.io-stream.js') }}"></script> --}}
+    <!-- {{-- <script src="{{ asset('js/socket.io-stream.js') }}"></script> --}} -->
     @yield('page-script')
 </body>
 </html>
