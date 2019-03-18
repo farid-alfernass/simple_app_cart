@@ -1,9 +1,22 @@
 
 **Start Laravel Server**
 
+.env db 
+DB_CONNECTION=pgsql
+DB_HOST=127.0.0.1
+DB_PORT=5432
+DB_DATABASE=dbmahasiswa
+DB_USERNAME=postgres
+DB_PASSWORD=password
+
 Open Second **Terminal / CMD** Go to project directory
 
 ```
+composer install
+php artisan migrate
+php artisan db:seed --class=UserTableSeeder
+php artisan db:seed --class=MahasiswaTableSeeder
+php artisan db:seed --class=ProdiTableSeeder
 php artisan serve
 ```
 

@@ -14,12 +14,20 @@ class MahasiswaTableSeeder extends Seeder
     public function run()
     {
     	$faker = Faker::create();
-    	foreach (range(1,5) as $index) {
+    	foreach (range(1,10) as $index) {
 		        DB::table('mahasiswa')->insert([
 		            'nama' => $faker->name,
 		            'prodi_id' => mt_rand(1, 3),
 		            'jenis_kelamin' => 'P',
 		        ]);
 		}
+
+        foreach (range(1,10) as $index) {
+                DB::table('mahasiswa')->insert([
+                    'nama' => $faker->name,
+                    'prodi_id' => mt_rand(1, 3),
+                    'jenis_kelamin' => 'L',
+                ]);
+        }
     }
 }
